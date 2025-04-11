@@ -6,5 +6,6 @@ A simple console-based system for managing library books and borrowers using Obj
 - Borrow and return books
 - Search for books and borrowers
 - View borrowed books
+- Display available books
 ## Student Name 
 - Mohi Eddine Matallah
