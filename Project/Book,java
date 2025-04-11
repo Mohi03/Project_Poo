@@ -1,0 +1,27 @@
+class Book {
+    private String title;
+    private String author;
+    private String ISBN;
+    private String type;
+    private boolean isBorrowed;
+
+    public Book(String title, String author, String ISBN, String type) {
+        this.title = title;
+        this.author = author;
+        this.ISBN = ISBN;
+        this.type = type;
+        this.isBorrowed = false;
+    }
+
+    public String getTitle() { return title; }
+    public String getISBN() { return ISBN; }
+    public boolean isBorrowed() { return isBorrowed; }
+
+    public void borrowBook() { isBorrowed = true; }
+    public void returnBook() { isBorrowed = false; }
+
+    @Override
+    public String toString() {
+        return "Title: " + title + ", Author: " + author + ", ISBN: " + ISBN + ", Type: " + type + ", Status: " + (isBorrowed ? "Borrowed" : "Available");
+    }
+}
